@@ -5,5 +5,9 @@ def fetch_all(query):
     cursor = connection.cursor()
     cursor.execute(query)
     data = cursor.fetchall()
+    data_dict =[]
+    for rows in data:
+        row_dict ={'id':rows[0],'title':rows[1],'price':rows[2]}
+        data_dict.append(row_dict)
     connection.close()
-    return data
+    return data_dict
