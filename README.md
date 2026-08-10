@@ -63,35 +63,21 @@ The framework validates API responses against expected data, performs database v
 ```text
 
 iot-api-automation/
-
 │
-
 ├── api/                    # API classes and endpoint methods
-
 ├── database/               # Database connection and utility functions
-
 ├── features/               # Behave feature files and step definitions
-
 ├── tests/                  # Pytest API and database tests
-
-├── test\_data/              # Test data
-
+├── test_data/              # Test data
 ├── utilities/              # Shared utilities
-
+├── conftest.py             # Pytest fixtures
 ├── .github/
-
 │   └── workflows/
-
 │       └── tests.yml       # GitHub Actions CI workflow
-
 ├── Dockerfile              # Docker test environment
-
 ├── requirements.txt        # Python dependencies
-
 ├── README.md
-
 └── .gitignore
-
 ```
 
 
